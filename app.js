@@ -35,6 +35,9 @@ function renderPatients() {
 
     // TODO 6: Keep all patients when the filter is "all".
     // Otherwise, skip patients whose status does not match the filter.
+    //The logic means: If the filter is all, do not skip anyone. If the filter is critical, skip stable patients.
+    //If the filter is stable, skip critical patients.
+    //he return skips only the current patient in the forEach() loop.
 
     const card = document.createElement("article");
     card.className = "patient-card";
