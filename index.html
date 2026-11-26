@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clinical XML Registry</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div>
+        <p class="eyebrow">Applied Informatics Collaborative App</p>
+        <h1>Clinical XML Registry</h1>
+      </div>
+      <span class="format-badge">XML</span>
+    </header>
+
+    <main>
+      <section class="controls" aria-labelledby="registry-heading">
+        <div>
+          <h2 id="registry-heading">Patient records</h2>
+          <p>Filter the records loaded from <code>patients.xml</code>.</p>
+        </div>
+
+        <label for="status-filter">Patient status</label>
+        <select id="status-filter">
+          <option value="all">All patients</option>
+          <option value="critical">Critical</option>
+          <option value="stable">Stable</option>
+        </select>
+      </section>
+
+      <p id="error-message" class="error-message" role="alert" hidden></p>
+      <section id="patient-list" class="patient-list" aria-live="polite"></section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
