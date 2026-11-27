@@ -43,12 +43,7 @@ function renderPatients() {
     card.dataset.status = status;
 
     const name = document.createElement("h3");
-
-    const card = document.createElement("article");
-    card.className = "patient-card";
-    card.dataset.status = status;
-
-    const name = document.createElement("h3");
+    
     // TODO 7: Read the name element and assign it with textContent.
     name.textContent = patient.querySelector("name").textContent;
 
