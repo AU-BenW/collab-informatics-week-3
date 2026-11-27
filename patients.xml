@@ -14,7 +14,7 @@
     <patient id="P-102" status="stable">
     <name>John Smith</name>
     <ward>General</ward>
-    <condition>Checkup & observation</condition>
+    <condition>Checkup &amp; observation</condition>
     <observation code="TEMP" unit="C">36.8</observation>
 
     </patient>
